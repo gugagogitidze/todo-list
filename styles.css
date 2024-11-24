@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  padding: 296px;
+  background: #eee;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.Todo {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #007fdb;
+  font-family: "Inter";
+  font-size: 96px;
+}
+
+.box1 {
+  width: 430px;
+  height: 636px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bbthdiv {
+  display: flex;
+  gap: 125px;
+}
+
+.box2 {
+  width: 430px;
+  height: 630px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-texts {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Thur {
+  display: none;
+}
+.AM {
+  position: absolute;
+  color: #fff;
+  font-family: "Russo One";
+}
+
+.Thur {
+  top: 120px;
+  right: 10px;
+  font-size: 18px;
+}
+
+.AM {
+  top: 140px;
+  right: 10px;
+  font-size: 48px;
+}
+
+.last-section {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  display: flex;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.note {
+  flex: 1;
+  padding: 12px;
+  border-radius: 5px;
+  background: #ebeff2;
+  border: 0;
+}
+
+.button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #20eeb0;
+  color: white;
+  border: 0;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 5px;
+  background: #f9fafb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-info h4 {
+  font-size: 16px;
+  color: #333;
+}
+
+.task-info span {
+  font-size: 12px;
+  color: #888;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-actions .check {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #20eeb0;
+  cursor: pointer;
+  position: relative;
+}
+
+.task-actions .check input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.task-actions .check input[type="checkbox"]:checked + span {
+  background: #20eeb0;
+}
+
+.task-actions .check span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  background: transparent;
+  transition: 0.3s ease;
+}
